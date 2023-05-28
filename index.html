@@ -126,30 +126,32 @@
         <div class="row" style="margin-top:50px;">
 
             <div class="col-6">
+              <form id="addForm">
                 <h3>Sign Up</h3>
                 <p>If you would like to sign up for one of our courses, use our Form below:</p>
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Name & Surname" id="names">
+                    <input type="text" class="form-control" placeholder="Name & Surname" id="names" required>
                   </div>
     
                 <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Enter email" id="email">
+                    <input type="email" class="form-control" placeholder="Enter email" id="email" required>
                 </div>
     
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Contact Number" id="number">
+                    <input type="tel" class="form-control" placeholder="Contact Number" id="number" required>
                 </div>
     
                 <div class="form-group">
-                    <select class="form-control" placeholder="Select A Subject" id="subjects">
+                    <select class="form-control" id="subjects" required>
                       <option>UX design</option>
                       <option>Development</option>
                       <option>Product Design</option>
+                      <option selected="selected">Select A Subject</option>
                     </select>
                 </div>
     
                 <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Password" id="password">
+                    <input type="password" class="form-control" placeholder="Password" id="password" required>
                 </div>
     
                 <div class="form-check">
@@ -161,6 +163,8 @@
     
                 <button type="button" class="btn btn-primary" onclick="addAccount()">Register Account</button>
             </div>
+              </form>
+                
             
      
             <div class="col-6">

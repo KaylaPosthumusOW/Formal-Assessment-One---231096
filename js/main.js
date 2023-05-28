@@ -19,6 +19,8 @@ addAccount = () => {
         alert("Well, well, well... why don't you want to sign up for our newsletter... you don't seem to be that interested " + names + "!  If you want to sign up, you better CHECK that newsletter box!") 
     }
 
+    document.getElementById("addForm").reset();
+
 }
 
 addAccount();
