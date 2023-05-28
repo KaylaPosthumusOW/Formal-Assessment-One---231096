@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <script src="js/main.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -57,9 +58,11 @@
         </div>
       </nav>
 
-      <div class="container-fluid">
+      
         <div class="jumbotron">
-            <h1 class="display-4">Your Future, From the Past!</h1>
+          <div class="container-fluid">
+            <div class="container">
+              <h1 class="display-4">Your Future, From the Past!</h1>
             <p class="lead">
                 Welcome to our prestigious university!
                 At ClosedDoor University, we are dedicated to providing an exceptional educational experience that empowers our students to thrive in a rapidly evolving world.</p>
@@ -70,8 +73,10 @@
               <a class="btn btn-danger btn-lg" href="#" role="button">Development</a>
               <a class="btn btn-success btn-lg" href="#" role="button">Product Design</a>
             </p>
+            </div>
           </div>
-      </div>
+        </div>
+      
       
 
       <div class="container">
@@ -84,7 +89,7 @@
                       <h5 class="card-title">UX Design</h5>
                       <p class="card-text">
                         Embark on a transformable journey into the world of User Experience (UX) design with our comprehensive program at ClosedDoor University.</p>
-                      <a href="#" class="btn btn-primary">Read More</a>
+                      <button type="button" class="btn btn-primary">Read More</button>
                     </div>
                 </div>
             </div>
@@ -118,25 +123,25 @@
       
     
       <div class="container">
-        <div class="row">
+        <div class="row" style="margin-top:50px;">
 
             <div class="col-6">
                 <h3>Sign Up</h3>
                 <p>If you would like to sign up for one of our courses, use our Form below:</p>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name & Surname">
+                    <input type="text" class="form-control" placeholder="Name & Surname" id="names">
                   </div>
     
                 <div class="form-group">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <input type="email" class="form-control" placeholder="Enter email" id="email">
                 </div>
     
                 <div class="form-group">
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name & Surname">
+                    <input type="text" class="form-control" placeholder="Contact Number" id="number">
                 </div>
     
                 <div class="form-group">
-                    <select class="form-control" id="exampleFormControlSelect1" placeholder="Select A Subject">
+                    <select class="form-control" placeholder="Select A Subject" id="subjects">
                       <option>UX design</option>
                       <option>Development</option>
                       <option>Product Design</option>
@@ -144,17 +149,17 @@
                 </div>
     
                 <div class="form-group">
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <input type="password" class="form-control" placeholder="Password" id="password">
                 </div>
     
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <label class="form-check-label" for="defaultCheck1">
-                      Default checkbox
+                    <input class="form-check-input" type="checkbox" id="checkbox">
+                    <label class="form-check-label">
+                      Send me Spam NewsLetters
                     </label>               
                 </div>
     
-                <button type="button" class="btn btn-primary">Register Account</button>
+                <button type="button" class="btn btn-primary" onclick="addAccount()">Register Account</button>
             </div>
             
      
